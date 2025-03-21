@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+    <form method ="post" id="formulario">
+
+        <input type="text" name="NombreCompleto" id="NombreCompleto" placeholder="Ingrese su nombre completo" onkeyup="validarNombre()">
+        <p id = "Error"></p>
+        <input type="text" name="Email" id="Email" placeholder="Ingrese su Email" onkeyup="validarEmail()">
+        <p id = "ErrorEmail"></p>
+        <input type="password" name="Contraseña" id="Contraseña" placeholder="Ingrese su contraseña" onkeyup="validarContraseña()">
+        <p id = "ErrorContraseña"></p>
+        <input type="password" name="ConfirmarContraseña" id="ConfirmarContraseña" placeholder="Ingrese su contraseña nuevamente" onkeyup=" ValidarConfirmarContraseña()">
+        <p id = "ErrorConfirmarContraseña"></p>
+        <input type="submit" value="Enviar" onsubmit="EnviarFormulario(event)">
+        <p id = "MensajeFinal"></p>
+
+
+
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
